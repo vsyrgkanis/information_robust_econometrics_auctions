@@ -10,7 +10,6 @@ import math
 import numpy as np
 from scipy.stats import binom
 import pandas as pd
-import plot_statistics
 sys.path.append(os.path.abspath('./lib'))
 from bcemetricspy import bce_lp, utils
 
