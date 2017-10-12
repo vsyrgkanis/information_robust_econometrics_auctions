@@ -54,6 +54,17 @@
 * To run any of these functions you need to install the COIN-CBC linear programming solver.
   - For linux you just run: 
 	$ sudo apt-get install coinor-cbc
+  - For Mac OS X:
+  $ svn co https://projects.coin-or.org/svn/Cbc/stable/2.9 Cbc-2.9
+  $ cd Cbc-2.9
+  $ make
+  $ make install
+  Then you need to add the bin path that is created inside this folder to your bash path. You
+  can do this by:
+  $ sudo vim .bash_profile
+  Then adding a line at the end:
+  export PATH="__path_to_cbc_bin__:$PATH"
+For more installation instructions check here: https://projects.coin-or.org/Cbc
 
 * You also need to install the pulp library for python. Because pulp is constantly
   updating and has some bugs. I recommend downloading the git repo and running setup.py
