@@ -1,5 +1,10 @@
 # Python code for doing robust econometrics in auctions
 
+## Example code
+* Check out a jupyter notebook with a full example of how to use the library to perform parametric and
+non parametric inference in common value auctions with weak assumptions on information and 
+with confidence intervals, based on subsampling. 
+[Jupyter Notebook with Expository Functinalities](https://github.com/vsyrgkanis/information_robust_econometrics_auctions/blob/master/example_inference.ipynb)
 
 ## Contents
 * ocs_data_analysis: code for analyzing the ocs dataset. also contains the dataset itself.
