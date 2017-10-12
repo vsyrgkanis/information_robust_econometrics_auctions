@@ -4,20 +4,6 @@
 
 Compute a BCE of a common value first price auction and compute the sharp
 identified set of any moment given a bid distribution of a BCE.
-
-TODO
-- 2017/03/12: Add slack tolerance variables to the density constraints on the parametric LPs.
-- Add regularized maximization of BCE with ell_1 regularization so as to
-    compute a BCE with sparse support, rather than doing the sampling based one.
-    This will work much slower for many bidders and many bid levels, but it
-    will give a much better coverage of the BCE space, than what we currently
-    do.
-- Add covariates with a linear utility function. This should be a new function:
-    inverse_bce_with_covariates(...)
-    Also we should have a new direct bce, which computes a bce with a covariate
-    and linear utility: compute_bce_with_covariates(...)
-- Add random sampling of the best response constraints. This should be a new
-    function: inverse_bce_random_deviations.
 """
 from itertools import product
 import random
